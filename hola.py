@@ -12,7 +12,7 @@ from secret_sauce import (
 )
 
 openai.api_key = os.getenv('open_ai_api_key')
-token = os.getenv('discord_token')
+token = os.getenv('token')
 
 #set-up openai_key
 # openai.api_key = open_ai_api_key
