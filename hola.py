@@ -2,7 +2,7 @@
 Really refer to the following as it explains the code pretty well:
 https://github.com/Rapptz/discord.py/blob/master/discord/flags.py
 """
-import sys
+
 import discord 
 import openai
 from secret_sauce import *
