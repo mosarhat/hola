@@ -3,12 +3,19 @@ Really refer to the following as it explains the code pretty well:
 https://github.com/Rapptz/discord.py/blob/master/discord/flags.py
 """
 
+import os
 import discord 
 import openai
-from secret_sauce import *
+from secret_sauce import (
+    tokenAlt,
+    open_ai_api_key
+)
+
+openai.api_key = os.getenv('open_ai_api_key')
+token = os.getenv('discord_token')
 
 #set-up openai_key
-openai.api_key = open_ai_api_key
+# openai.api_key = open_ai_api_key
 
 # an intents object that is set to default using the default method 
 intents = discord.Intents.default()
