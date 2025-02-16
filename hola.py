@@ -6,10 +6,10 @@ https://github.com/Rapptz/discord.py/blob/master/discord/flags.py
 import os
 import discord 
 import openai
-from secret_sauce import (
+"""from secret_sauce import (
     tokenAlt,
     open_ai_api_key
-)
+)"""
 
 openai.api_key = os.getenv('open_ai_api_key')
 token = os.getenv('token')
