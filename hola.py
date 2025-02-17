@@ -38,9 +38,9 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    if message.channel.name != "hola":
-        return 
-    
+    if message.channel.name not in ("hola", "spanish"):
+        return
+
     channel_id = message.channel.id
 
     if channel_id not in message_history:
