@@ -41,3 +41,7 @@ pip install -U discord.py
 For hosting, I've decided to utilize Railway because it's free. 
 
 Initially, I had set up a Python server locally, but running a server locally 24/7 on my laptop is just silly. Hence, I've decided to go with a hosting service. 
+
+## Note
+
+My backend seems to have a major issue which is, when hosted, my bot is appending to only ONE dictionary within my deployment, so I have a disctionary with a gagillion sub-key/value pairs. I need to make it so that every hour, the bot refreshed the message history. This ensures that after a while, my bot doesn't have like 10-million entries. 
