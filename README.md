@@ -44,4 +44,6 @@ Initially, I had set up a Python server locally, but running a server locally 24
 
 ## Note
 
-My backend seems to have a major issue which is, when hosted, my bot is appending to only ONE dictionary within my deployment, so I have a disctionary with a gagillion sub-key/value pairs. I need to make it so that every hour, the bot refreshed the message history. This ensures that after a while, my bot doesn't have like 10-million entries. 
+My backend seems to have a major issue which is, when hosted, my bot is appending to only ONE dictionary within my deployment, so I have a disctionary with a gagillion sub-key/value pairs. I need to make it so that every hour, the bot refreshed the message history. This ensures that after a while, my bot doesn't have like 10-million entries.
+
+Another point, I am going to try to find a design pattern that works to make my code significantly easier to read; might use Factory, but that's TBD.
